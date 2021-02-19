@@ -1,4 +1,2 @@
 # PROJET_groupe5
-# yoyoo
-# ekip
-# one piece best manga overall
+# c'est un projet sur la simulation d'un incendie 
