@@ -5,6 +5,7 @@
 # Claude LOUEMBET
 # Samy
 # Ruben 
+https://github.com/uvsq22007891/PROJET_groupe5
 #######################################################################################################
 
 import tkinter as tk
@@ -45,7 +46,21 @@ def random_parcelle(event):
             canvas.create_rectangle((i*largeur_case, j*hauteur_case),
                 ((i+1)*largeur_case, (j+1)*hauteur_case), fill=color)
 #######################################################################################################
+def sauvegarde(save):
+    """ permet d'enregistrer les données de la partie actuelle """
+    fichier = open("fichier.txt","w")
 
+    with open("fichier.txt", 'wb') as save:
+        pickle.dump(fichier,save)
+
+
+
+    
+
+def charge(save):
+    """ permet de chargerles données de la partie précédente """
+    with open('fichier.txt','rb') as save:
+        chargement= pickle.load(save)
 
 
 racine = tk.Tk() # Création de la fenêtre racine
