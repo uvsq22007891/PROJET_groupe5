@@ -23,7 +23,7 @@ def charge (event):
 # Ruben AMOYAL
 #######################################################################################################
 
-def random_parcelle(event):
+def random_parcelle():
     """ me les parcelles aléatoirement sur le terrain """
     canvas = tk.Canvas(racine, bg="white", height=HEIGHT, width=WIDTH)
     canvas.grid()
@@ -49,5 +49,5 @@ def random_parcelle(event):
 
 
 racine = tk.Tk() # Création de la fenêtre racine
-
+random_parcelle()
 racine.mainloop() # Lancement de la boucle principale
